@@ -13,6 +13,7 @@ const Weather = () => {
   const fetchWeather = () => {
     setLoading(true);
     setError(null);
+    setWeather(null); // Clear previous weather data
 
     axios.get(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`)
       .then(response => {
