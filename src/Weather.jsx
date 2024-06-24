@@ -26,7 +26,7 @@ const Weather = () => {
           setError('Failed to fetch weather data');
           alert('Failed to fetch weather data');
         });
-    }, 200); // 500 milliseconds delay
+    }, 500); // 500 milliseconds delay
   };
 
   return (
