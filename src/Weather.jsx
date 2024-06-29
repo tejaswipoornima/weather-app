@@ -14,8 +14,6 @@ const Weather = () => {
     setLoading(true);
     setError(null);
     setWeather(null); // Clear previous weather data
-
-    setTimeout(() => {
       axios.get(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`)
         .then(response => {
           setWeather(response.data);
@@ -26,7 +24,7 @@ const Weather = () => {
           setError('Failed to fetch weather data');
           alert('Failed to fetch weather data');
         });
-    }, 200); // 500 milliseconds delay
+    }; 
   };
 
   return (
