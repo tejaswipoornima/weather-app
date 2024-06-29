@@ -36,7 +36,7 @@ const Weather = () => {
         placeholder="Enter city name" 
       />
       <button onClick={fetchWeather}>Search</button>
-
+    <div>
       {loading && <p>Loading data...</p>}
       {error && <p>{error}</p>}
       {weather && (
@@ -59,6 +59,7 @@ const Weather = () => {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };
