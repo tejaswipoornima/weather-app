@@ -24,8 +24,7 @@ const Weather = () => {
           setError('Failed to fetch weather data');
           alert('Failed to fetch weather data');
         });
-    }; 
-  };
+      };
 
   return (
     <div>
